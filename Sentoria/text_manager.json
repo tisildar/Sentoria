@@ -1,0 +1,25 @@
+{
+    "General": {
+        "space": " ",
+        "wrong_choice": "Geçersiz seçenek. Lütfen seçmek istediğiniz seçeneğin solundaki rakamı yazıp enter tuşuna basınız.",
+        "wrong_name": "Hatalı bir isim girdiniz. Sembol veya rakam kullanmayınız.",
+        "increase_stat_text": "{stat} BONUSUN 1 ARTTI",
+        "decrease_stat_text": "{stat} BONUSUN 1 AZALDI"
+    },
+    "CharactherCreation": {
+        "enterance": "Ardfast şehrinin garnizonundasın. Buraya orduya katılmak için geldin. Karşında orduya alımdan sorumlu 3 asker var. Ortaki ağır zırhlı asker 'İsmin ?' diye sordu",
+        "choose_possitive_ability_text": "Pekala {name}. Yetenekli olduğun konu nedir ? Seni bir mücadelede ön plana çıkaran özelliğin nedir ?",
+        "choose_possitive_ability_options": "1- Gücüm ve kılıç ustalığım\n2- Çevikliğim ve Ok ile yay kullanma becerim\n3- Zekam ve büyü gücüm.",
+        "choosing_strength_path_text": "Sen cevabını verdikten sonra ağır zırhlı askerin dikkatini çektiğini fark ettin. Apğır zırhlı asker yüksek bir ses ile.",
+        "choose_possitive_ability_dexterity_text": "Cevabını ile ağır zırhlı askerin sağında sırtın büyükçe bir yay olan asker seni süzdü ve sana yaklaşıp sakince etrafında yürüdü. Ardından alaycı bir ses tonu ile",
+        "choosing_dexterity_path_passive_check_fail_text": "- Hmm demek becerikli biri olduğunu idda ediyorsun. Ben Eclana krallığının istihbarat biriminin yardımcı kaptanı Calude. Bu arada bunu düşünrmüşsün.",
+        "choosing_dexterity_path_passive_check_success_text": "- Hmm demek becerikli biri olduğunu idda ediyorsun. Ben Eclana krallığının istihbarat biriminin yardımcı kaptanı Calude.",
+        "choosing_intelligince_path_text": "Cevabın ile birlikte ağır zırhlı askerin solunda bulunan cılız adamın gözlerinde mavi bir parıltı ile sana baktığını gördün.",
+        "choose_intelligince_negative_ability": "1- Kılıçlar ve silahlardan pek anlamıyorum.\n2- Pek el becerisi olan biri değilim",
+        "choosing_intelligince_negative_ability_strength_text": "Awramor: Pekala seni kaba kuvvet gereken işlerden uzak tutmak için elimden geleni yapacam.",
+        "choosing_intelligince_negative_ability_dexterity_text": "Awramor: El becerisi isteyen görevlere denk gelmemen için elimden geleni yapacam.",
+        "choose_strength_negative_ability": "1- Pek el becerisi olan biri değilim.\n2- Mistik sanatların pek kafamın bastığı bir alan olduğunu söyleyemem",
+        "choose_dexterity_negative_ability": "1- Pek el becerisi olan biri değilim.\n2- Mistik sanatların pek kafamın bastığı bir alan olduğunu söyleyemem"
+        
+    }
+}
