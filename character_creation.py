@@ -42,7 +42,7 @@ def get_characther_class():
     if choice == '8':
         main_characther.set_char_class('Ranger')
     if choice == '9':
-        main_characther.set_char_class('Rouge')
+        main_characther.set_char_class('Rogue')
     if choice == '10':
         main_characther.set_char_class('Sorcerer')
     if choice == '11':
