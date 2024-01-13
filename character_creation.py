@@ -10,7 +10,16 @@ def get_valid_input(prompt, valid_options):
         else:
             text_manager.get_text_from_json("General","wrong_choice")
     
-
+def get_charachter_name():
+    while True:
+        text_manager.get_text_from_json("General","space")
+        char_Name = main_characther.set_char_name()
+        if char_Name.isalpha():
+            text_manager.get_text_from_json("CharactherCreation","choose_possitive_ability_text")
+            break
+        else:
+            text_manager.get_text_from_json("General","wrong_name")
+            
 def choose_posstive_ability():
     text_manager.get_text_from_json("CharactherCreation","choose_possitive_ability_options")
     choice = get_valid_input("Seçimin",['1','2','3'])
