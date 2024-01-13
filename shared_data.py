@@ -1,8 +1,11 @@
 class SharedData:
-    def __init__(self, strength, dexterity, intelligince, health,char_name):
+    def __init__(self, strength, dexterity,constituion, intelligince, wisdom, charisma, health,char_name):
         self.__strength = strength
         self.__dexterity = dexterity
+        self.__constituion = constituion
         self.__intelligence = intelligince
+        self.__wisdom = wisdom
+        self.__charisma = charisma        
         self.__current_health = health
         self.__max_health = health
         self.__char_name = char_name
@@ -13,8 +16,47 @@ class SharedData:
     def get_dexterity(self):
         return self.__dexterity
     
+    def get_constituion(self):
+        return self.__constituion
+    
     def get_intelligence(self):
         return self.__intelligence
+    
+    def get_wisdom(self):
+        return self.__wisdom
+    
+    def get_charisma(self):
+        return self.__charisma
+    
+    def get_strength_bonus(self):
+        current_strength = self.__strength
+        strength_bonus = (current_strength-10)/2
+        return strength_bonus
+    
+    def get_dexterity_bonus(self):
+        current_dexterity = self.__dexterity
+        dexterity_bonus = (current_dexterity-10)/2
+        return dexterity_bonus
+    
+    def get_constituion_bonus(self):
+        current_constituion = self.__constituion
+        constituion_bonus = (current_constituion-10)/2
+        return constituion_bonus
+    
+    def get_intelligence_bonus(self):
+        current_intelligence = self.__intelligence
+        intelligence_bonus = (current_intelligence-10)/2
+        return intelligence_bonus
+    
+    def get_wisdom_bonus(self):
+        current_wisdom = self.__wisdom
+        wisdom_bonus = (current_wisdom-10)/2
+        return wisdom_bonus
+    
+    def get_charisma_bonus(self):
+        current_charisma = self.__charisma
+        charisma_bonus = (current_charisma-10)/2
+        return charisma_bonus
     
     def get_current_health(self):
         return self.__current_health
@@ -35,8 +77,7 @@ class SharedData:
         return self.__max_health
 
     def get_char_name(self):
-        return self.__char_name
-    
+        return self.__char_name    
     
     def set_char_name(self):
         self.__char_name = input('Karakterinin ismini yaz: ')
