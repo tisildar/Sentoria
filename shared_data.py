@@ -1,5 +1,5 @@
 class SharedData:
-    def __init__(self, strength, dexterity,constituion, intelligince, wisdom, charisma, health,char_name):
+    def __init__(self, strength, dexterity,constituion, intelligince, wisdom, charisma, health,char_name,char_class):
         self.__strength = strength
         self.__dexterity = dexterity
         self.__constituion = constituion
@@ -9,6 +9,7 @@ class SharedData:
         self.__current_health = health
         self.__max_health = health
         self.__char_name = char_name
+        self.__char_class = char_class
 
     def get_strength(self):
         return self.__strength   
@@ -82,6 +83,13 @@ class SharedData:
     def set_char_name(self):
         self.__char_name = input('Karakterinin ismini yaz: ')
         return self.__char_name
+    
+    def set_characther_class(self,value):
+        self.__char_class = value
+        return self.__char_class
+    
+    def get_characther_class(self):
+        return self.__char_class
     
     def increase_stat(self,type):
 

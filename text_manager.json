@@ -8,8 +8,8 @@
     },
     "CharactherCreation": {
         "enterance": "Ardfast şehrinin garnizonundasın. Buraya orduya katılmak için geldin. Karşında orduya alımdan sorumlu 3 asker var. Ortaki ağır zırhlı asker 'İsmin ?' diye sordu",
-        "choose_possitive_ability_text": "Pekala {name}. Yetenekli olduğun konu nedir ? Seni bir mücadelede ön plana çıkaran özelliğin nedir ?",
-        "choose_possitive_ability_options": "1- Gücüm ve kılıç ustalığım\n2- Çevikliğim ve Ok ile yay kullanma becerim\n3- Zekam ve büyü gücüm.",
+        "choose_class_text": "Pekala {name}.Karakterinin sınıfı nedir ?",
+        "choose_class_options": "1- Barbarian\n2- Bard\n3- Cleric\n4- Druid\n5- Fighter\n6- Monk\n7- Paladin\n8- Ranger\n9- Rouge\n10- Sorcerer\n11- Warlock\n12- Wizard",
         "choosing_strength_path_text": "Sen cevabını verdikten sonra ağır zırhlı askerin dikkatini çektiğini fark ettin. Apğır zırhlı asker yüksek bir ses ile.",
         "choose_possitive_ability_dexterity_text": "Cevabını ile ağır zırhlı askerin sağında sırtın büyükçe bir yay olan asker seni süzdü ve sana yaklaşıp sakince etrafında yürüdü. Ardından alaycı bir ses tonu ile",
         "choosing_dexterity_path_passive_check_fail_text": "- Hmm demek becerikli biri olduğunu idda ediyorsun. Ben Eclana krallığının istihbarat biriminin yardımcı kaptanı Calude. Bu arada bunu düşünrmüşsün.",

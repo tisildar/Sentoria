@@ -2,7 +2,7 @@ import random
 from text_manager_old import General
 
 def strength_check(characther,DC):
-        roll = random.randint(1,6)
+        roll = random.randint(1,20)
         bonus = characther.get_strength()
 
         result = roll + bonus
@@ -19,95 +19,31 @@ def strength_check(characther,DC):
         print(f'Başarılı olmak için gereken minumum skor = {DC}')
         return check_status
         
-def dexterity_check(characther,DC):
-    roll = random.randint(1,6)
-    bonus = characther.get_dexterity()
-    result = roll + bonus
-    General.space()
-    if result >= DC:
-        print("BAŞARILI")
-        check_status = True
-    else:
-        print("BAŞARISIZ")
-        check_status = False
-    print(f'Gelen zar = {roll}')
-    print(f'Çeviklik bonsunu = {bonus}')
-    print(f'Sonuç = {result}')
-    print(f'Başarılı olmak için gereken minumum skor = {DC}')
-    return check_status
+def strength_saving_throw(characther,DC):
+        roll = random.randint(1,20)
+        strength_bonus = characther.get_strength_bonus()
+        characther_class = characther.get_characther_class()
+        proficiency_bonus = 0
+        is_have_proficiency = False
 
-    
-def intelligence_check(characther,DC):
-    roll = random.randint(1,6)
-    bonus = characther.get_intelligence()
-    result = roll + bonus
-    General.space()
-    if result >= DC:
-        print("BAŞARILI")
-        check_status = True
-    else:
-        print("BAŞARISIZ")
-        check_status = False
-    print(f'Gelen zar = {roll}')
-    print(f'Zeka bonsunu = {bonus}')
-    print(f'Sonuç = {result}')
-    print(f'Başarılı olmak için gereken minumum skor = {DC}')
-    return check_status
-    
-    
-def luck_check(DC):
-    roll = random.randint(1,6)
-    General.space()
-    print(f'Gelen zar = {roll}')
-    result = roll 
-    if result >= DC:
-        print("BAŞARILI")
-        check_status = True
-    else:
-        print("BAŞARISIZ")
-        check_status = False
-    print(f'Sonuç = {result}')
-    print(f'Başarılı olmak için gereken minumum skor = {DC}')
-    return check_status
-    
-def strenght_passive_check(characther,DC):
-    roll = random.randint(1,6)
-    bonus = characther.get_strength()
-    check_status = False
-    result = roll + bonus
-    if result >= DC:
-        check_status = True
-    else:
-        check_status = False
-    return check_status
+        if characther_class == 'Barbarian':
+            is_have_proficiency = True
 
-def dexterity_passive_check(characther,DC):
-    roll = random.randint(1,6)
-    bonus = characther.get_dexterity()
-    check_status = False
-    Result = roll + bonus
-    if Result >= DC:
-        check_status = True
-    else:
-        check_status = False
-    return check_status
+        if is_have_proficiency == True:
+             proficiency_bonus = 2
 
-def intelligence_passive_check(characther,DC):
-    roll = random.randint(1,6)
-    bonus = characther.get_intelligence()
-    check_status = False
-    result = roll + bonus
-    if result >= DC:
-        check_status = True
-    else:
-        check_status = False
-    return check_status
+        result = roll + strength_bonus + proficiency_bonus
+        General.space()
+        if result >= DC:
+            print("BAŞARILI")
+            check_status = True
+        else:
+            print("BAŞARISIZ")
+            check_status = False
+        print(f'Gelen zar = {roll}')
+        print(f'Streght bonsunu = {strength_bonus}')
+        print(f'Proficiency bonsunu = {proficiency_bonus}')
+        print(f'Sonuç = {result}')
+        print(f'Başarılı olmak için gereken minumum skor = {DC}')
+        return check_status
 
-def luck_passive_check(DC):
-    roll = random.randint(1,6)
-    check_status = False
-    if roll >= DC:
-        check_status = True
-    else:
-        check_status = False
-    return check_status
