@@ -1,6 +1,7 @@
 from characthers import main_characther
 import dice_system
 import text_manager
+import Characther_Class
 
 def get_valid_input(prompt, valid_options):
     while True:
@@ -20,17 +21,17 @@ def get_charachter_name():
         else:
             text_manager.get_text_from_json("General","wrong_name")
 
-def get_characther_class():
+def ask_characther_class():
     text_manager.get_text_from_json("CharactherCreation","choose_class_text")
     text_manager.get_text_from_json("CharactherCreation","choose_class_options")
     choice = get_valid_input("Seçimin = ",['1','2','3','4','5','6','7','8','9','10','11','12'])
     
     if choice == '1':
-        main_characther.set_char_class('Barbarian')
+        Characther_Class.Barbarian.set_class_to_barbarian(main_characther)
     if choice == '2':
         main_characther.set_char_class('Bard')
     if choice == '3':
-        main_characther.set_char_class('Cleric')
+        Characther_Class.Cleric.set_class_to_cleric(main_characther)
     if choice == '4':
         main_characther.set_char_class('Druid')
     if choice == '5':
@@ -57,6 +58,7 @@ def execute():
     text_manager.get_text_from_json("CharactherCreation","enterance")
     get_charachter_name()
 
-get_characther_class()
+ask_characther_class()
+dice_system.strength_saving_throw(main_characther,12)
 
 # Spagetti neydi ? Spagetti emekti. BURAYI ADAM ETMENİN YOLUNU BULMAYI UNUTNMA

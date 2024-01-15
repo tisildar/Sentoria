@@ -1,4 +1,5 @@
 import random
+import Characther_Class
 from text_manager_old import General
 
 def strength_check(characther,DC):
@@ -24,10 +25,10 @@ def strength_saving_throw(characther,DC):
         strength_bonus = characther.get_strength_bonus()
         characther_class = characther.get_characther_class()
         proficiency_bonus = 0
-        is_have_proficiency = False
+        is_have_proficiency = characther.is_str_prof()
 
-        if characther_class == 'Barbarian' or characther_class == 'Fighter' or characther_class == 'Monk' or characther_class == 'Ranger':
-            is_have_proficiency = True
+        # if characther_class == 'Barbarian' or characther_class == 'Fighter' or characther_class == 'Monk' or characther_class == 'Ranger':
+            #is_have_proficiency = True
 
         if is_have_proficiency == True:
              proficiency_bonus = 2
