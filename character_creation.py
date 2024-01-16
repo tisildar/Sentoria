@@ -1,6 +1,4 @@
 from characthers import main_characther
-from characthers import main_characther2
-import dice_system
 import text_manager
 import characther_system
 
@@ -30,27 +28,27 @@ def ask_characther_class():
     if choice == '1':
         characther_system.Barbarian.set_class_to_barbarian(main_characther)
     if choice == '2':
-        
+       characther_system.Bard.set_class_to_bard(main_characther)
     if choice == '3':
         characther_system.Cleric.set_class_to_cleric(main_characther)
     if choice == '4':
-        main_characther.set_char_class('Druid')
+        characther_system.Druid.set_class_to_druid(main_characther)
     if choice == '5':
-        main_characther.set_char_class('Fighter')
+        characther_system.Fighter.set_class_to_fighter(main_characther)
     if choice == '6':
-        main_characther.set_char_class('Monk')
+        characther_system.Monk.set_class_to_monk(main_characther)
     if choice == '7':
-        main_characther.set_char_class('Paladin')
+        characther_system.Paladin.set_class_to_paladin(main_characther)
     if choice == '8':
-        main_characther.set_char_class('Ranger')
+        characther_system.Ranger.set_class_to_ranger(main_characther)
     if choice == '9':
-        main_characther.set_char_class('Rogue')
+        characther_system.Rouge.set_class_to_rouge(main_characther)
     if choice == '10':
-        main_characther.set_char_class('Sorcerer')
+        characther_system.Sorcerer.set_class_to_sorcerer(main_characther)
     if choice == '11':
-        main_characther.set_char_class('Warlock')
+        characther_system.Warlock.set_class_to_warlock(main_characther)
     if choice == '12':
-        main_characther.set_char_class('Wizard')
+        characther_system.Wizard.set_class_to_wizard(main_characther)
 
 
 

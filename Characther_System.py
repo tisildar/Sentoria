@@ -134,7 +134,7 @@ class Barbarian(create_characther):
 
 class Bard(create_characther):
     
-    def set_class_to_barbarian(characther):
+    def set_class_to_bard(characther):
         characther.set_characther_class('Bard')
         characther.dexterity_prof = 2
         characther.charisma_prof = 2   
