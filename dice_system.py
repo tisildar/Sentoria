@@ -1,5 +1,5 @@
 import random
-import Characther_System
+import characther_system
 from text_manager_old import General
 
 def strength_check(characther,DC):
@@ -23,7 +23,6 @@ def strength_check(characther,DC):
 def strength_saving_throw(characther,DC):
         roll = random.randint(1,20)
         strength_bonus = characther.get_strength_bonus()
-        characther_class = characther.get_characther_class()
         proficiency_bonus = 0
         is_have_proficiency = characther.is_str_prof()
 

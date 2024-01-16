@@ -1,4 +1,4 @@
-from Characthers import main_characther
+from characthers import main_characther
 import sys
 
 def gain_life():
