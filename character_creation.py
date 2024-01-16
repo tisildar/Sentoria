@@ -1,7 +1,8 @@
-from Characthers import main_characther
+from characthers import main_characther
+from characthers import main_characther2
 import dice_system
 import text_manager
-import Characther_System
+import characther_system
 
 def get_valid_input(prompt, valid_options):
     while True:
@@ -27,11 +28,20 @@ def ask_characther_class():
     choice = get_valid_input("Seçimin = ",['1','2','3','4','5','6','7','8','9','10','11','12'])
     
     if choice == '1':
-        Characther_System.Barbarian.set_class_to_barbarian(main_characther)
+        characther_system.Barbarian.set_class_to_barbarian(main_characther)
+        x = main_characther.get_strength_savingthrow()
+        print(x)
+        characther_system.Cleric.set_class_to_cleric(main_characther2)
+ 
+        y = main_characther2.get_strength_savinthrow()
+        
+        print(y)
+
+
     if choice == '2':
         main_characther.set_char_class('Bard')
     if choice == '3':
-        Characther_System.Cleric.set_class_to_cleric(main_characther)
+        characther_system.Cleric.set_class_to_cleric(main_characther)
     if choice == '4':
         main_characther.set_char_class('Druid')
     if choice == '5':
@@ -59,6 +69,6 @@ def execute():
     get_charachter_name()
 
 ask_characther_class()
-dice_system.strength_saving_throw(main_characther,12)
+
 
 # Spagetti neydi ? Spagetti emekti. BURAYI ADAM ETMENİN YOLUNU BULMAYI UNUTNMA

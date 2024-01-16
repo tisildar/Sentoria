@@ -1,7 +1,5 @@
-import shared_data
-
-class Characther_Class:
-    def __init__(self,strength,dexterity,constituion,intelligince,wisdom,charisma,health,char_name,char_class):
+class characther_system:
+    def __init__(self,strength,dexterity,constituion,intelligence,wisdom,charisma,health,char_name,char_class):
         self.strength_prof = 0
         self.dexterity_prof = 0
         self.constituion_prof = 0
@@ -15,7 +13,7 @@ class Characther_Class:
         self.__strength = strength
         self.__dexterity = dexterity
         self.__constituion = constituion
-        self.__intelligence = intelligince
+        self.__intelligence = intelligence
         self.__wisdom = wisdom
         self.__charisma = charisma   
 
@@ -63,8 +61,8 @@ class Characther_Class:
     def get_strength_bonus(self):
         return  (self.__strength -10) / 2
 
-    def get_strength_savingthrow(self):
-        return ((self.__strength -10) / 2) + self.strength_prof
+    def get_strength_savinthrow(self):
+        return (self.__strength -10) / 2 + self.strength_prof
     
     def get_dexterity_score(self):
         return self.__dexterity   
@@ -78,23 +76,62 @@ class Characther_Class:
     def get_dexterity_savingthrow(self):
         return ((self.__dexterity -10) / 2) + self.dexterity_prof
     
-class Barbarian(Characther_Class):
+    def get_constituion_score(self):
+        return self.__constituion   
+    
+    def set_constituion_score(self,value):
+        return self.__constituion + value
 
-    def __init__(self):
-        self.strength_prof = 2
+    def get_constituion_bonus(self):
+        return  (self.__constituion -10) / 2
+
+    def get_constituion_savingthrow(self):
+        return ((self.__constituion -10) / 2) + self.constituion_prof
+    
+    def get_intelligince_score(self):
+        return self.__intelligence
+    
+    def set_intelligence_score(self,value):
+        return self.__intelligence + value
+
+    def get_intelligence_bonus(self):
+        return  (self.__intelligence -10) / 2
+
+    def get_intelligence_savingthrow(self):
+        return ((self.__intelligence -10) / 2) + self.intelligence_prof    
+    
+    def get_wisdom_score(self):
+        return self.__wisdom 
+    
+    def set_wisdom_score(self,value):
+        return self.__wisdom + value
+
+    def get_wisdom_bonus(self):
+        return  (self.__wisdom -10) / 2
+
+    def get_wisdom_savingthrow(self):
+        return ((self.__wisdom -10) / 2) + self.wisdom_prof 
+
+    def get_charisma_score(self):
+        return self.__charisma 
+    
+    def set_charisma_score(self,value):
+        return self.__charisma + value
+
+    def get_charisma_bonus(self):
+        return  (self.__charisma -10) / 2
+
+    def get_charisma_savingthrow(self):
+        return ((self.__charisma -10) / 2) + self.charisma_prof     
+
+class Barbarian(Characther_Class):
     
     def set_class_to_barbarian(characther):
+        characther.strength_prof = 2
         characther.set_characther_class('Barbarian')
 
-    def Rage():
-       pass
-
-class Cleric(Characther_Class,):
-    Characther_Class(test=False)
+class Cleric(Characther_Class):
 
     def set_class_to_cleric(characther):
-        Deneme = Characther_Class(test=False)
         characther.set_characther_class('Cleric')
-        x = Deneme.get_test()
-        print(x)
 
