@@ -1,5 +1,5 @@
 import random
-import Characther_Class
+import Characther_System
 from text_manager_old import General
 
 def strength_check(characther,DC):

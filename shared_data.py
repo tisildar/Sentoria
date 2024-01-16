@@ -10,6 +10,7 @@ class SharedData:
         self.__max_health = health
         self.__char_name = char_name
         self.__char_class = char_class
+        self.strength_prof = 2
 
     def get_strength(self):
         return self.__strength   
@@ -123,5 +124,9 @@ class SharedData:
         else:
             raise Exception("Yanlış stat tipi girdiniz")
         
+    def get_strength_bonus(self):
+        return  (self.__strength -10) / 2
 
+    def get_strength_savingthrow(self):
+        return ((self.__strength -10) / 2) + self.strength_prof
 
